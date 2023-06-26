@@ -1,0 +1,3 @@
+1.- Posicionar el puntero mediante el evento arc-slider_change-value cuando el rango inferior minimo es negativo.
+2.- Lanzar evento arc-slider_value-changed cuando cambie y se mueva el puntero.
+3.- Documentar los eventos
