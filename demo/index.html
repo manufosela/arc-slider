@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      min-height: 100vh;
+      background-color: #f2f2f3;
+      font-family: "Inter", sans-serif;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../arc-slider.js';
+
+    render(
+      html/* html */`
+        <arc-slider id="arcSlider1"></arc-slider>
+        <arc-slider id="arcSlider2" max-range="50" min-range="-50" color1="#00FF00" color2="#0000FF"></arc-slider>
+        <arc-slider id="arcSlider3" max-range="10" min-range="0" arc-value="2" color1="#FFFF00" color2="#800080"></arc-slider>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
